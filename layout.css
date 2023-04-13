@@ -1,0 +1,154 @@
+/* Mobile First - muotoillaan html sivu ensin mobiili-näkymään ja sitten mahdollisiin muihin näkymiin */
+
+html {
+  font-size: 62.5%; /* base font size 10px */
+}
+
+body {
+  margin: 1rem;
+  font-family: "Roboto Slab", serif;
+  max-width: 1024px;
+}
+
+h1,
+h2,
+h3,
+p,
+pre,
+ul,
+section {
+  margin-block-end: 1rem;
+}
+
+section {
+  background-color: #bbddee;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  background-color: #88aabb;
+  text-align: right;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-block-start: -1rem;
+
+  margin-inline: -1rem -1rem;
+  padding: 0.5rem;
+
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  border: solid black 2px;
+  border-width: 2px 0 0 0;
+}
+h3 {
+  font-size: 2.4rem;
+}
+p {
+  font-size: 1.6rem;
+}
+pre {
+  font-size: 1.6rem;
+  font-family: "Courier New", Courier, monospace;
+  padding-inline-start: 2rem;
+}
+ul {
+  font-size: 1.6rem;
+}
+
+/* Class tyyppinen sääntö */
+.iso-kirjain {
+  float: left;
+  font-size: 500%;
+  width: 1.2em;
+  text-align: center;
+  padding: 0.1em 0.1em 0;
+  background-color: #568;
+  color: white;
+  border: solid white 1px;
+  border-width: 0 0.2em 0.2em 0;
+  margin: -1rem 0.5em 0.2em -1rem;
+}
+/* ID-tyyppinen sääntö */
+#toinen-section {
+  border: 2px solid black;
+}
+#toinen-section-h2 {
+  border: none;
+}
+#pikkukuva-vasen-ylanurkka {
+  float: left;
+  width: 10rem;
+  border: solid black 2px;
+  border-width: 0 2px 2px 0;
+  margin: -1.2rem 1rem 1rem -1.2rem;
+}
+#pikkukuva-vasen-ylanurkka img {
+  max-width: 100%;
+}
+
+.kolmas-section {
+  border: solid black 2px;
+}
+
+/* mobiili */
+#banner1 {
+  float: none;
+
+  margin: -1.3rem -1.3rem 1rem -1.3rem;
+  background-color: white;
+  border: solid black 2px;
+  border-width: 0 0 0 0;
+  padding-inline: 1rem 1rem;
+  padding-block-end: 1rem;
+  font-size: 1.6rem;
+}
+
+#banner2 {
+  float: right;
+  width: 25%;
+  text-align: left;
+  font-size: 140%;
+  font-weight: bold;
+  font-style: italic;
+  padding: 1em;
+  text-indent: -0.5em;
+  background: white;
+  color: black;
+  border: solid black 2px;
+  border-width: 2px 0px 2px 2px;
+  margin: 0rem -1.2rem 0 0;
+}
+
+/* tablet ja suuremmat */
+@media only screen and (min-width: 426px) {
+  #banner1 {
+    float: left;
+    width: 50%;
+    margin: -1.2rem 1rem 1rem -1.2rem;
+    background-color: white;
+    border: solid black 2px;
+    border-width: 0 2px 2px 0;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  h2 {
+    background-color: #88aabb;
+    text-align: right;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-block-start: -1rem;
+
+    margin-inline: -1rem -1rem;
+    padding: 0.5rem;
+
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    border: none;
+  }
+}
